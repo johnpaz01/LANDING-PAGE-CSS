@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body {
+    background: url('../IMG/Background.jpg');
+    background-repeat: no-repeat;
+       background-size: contain;
+       padding-top: 0px;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 40px;
+    padding-bottom: 5rem;
+}
+
+
+header .logo {
+
+    width: 150px
+}
+
+.navegation ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.navegation ul li a {
+    color: #fff;
+    font-size: 1.6rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .6s;
+    scroll-behavior: smooth;
+
+}
+
+.navegation ul li a:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgb(88, 51, 51);
+    background-color: red;
+    padding: 8px 12px;
+}
+
+
+#Login {
+    background-color: red;
+    padding: 5px 8px;
+
+}
+
+#Login:hover {
+    transition: all .6s;
+    padding: 8px 10px;
+    background-color: #400881;
+
+}
+
+#family {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+    margin-right: 2rem;
+    margin-top: 8rem;
+    /* Adicione uma margem superior conforme necessário */
+    padding-bottom: 15rem;
+    /* Ajuste o preenchimento inferior conforme necessário */
+    gap: 7rem;
+}
+
+#family h2 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+#family p {
+    color: #876925;
+
+}
+#family img {
+    max-width: 25%;
+    /* Garante que a imagem não ultrapasse a largura máxima do contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 50px;
+    /* Arredonda as bordas da imagem */
+}
+
+
+
+/*main*/
+
+
+main {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background-color: #f6e9e9;
+}
+
+
+main section {
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1.1rem;
+}
+
+main section h1 {
+    font-size: 5rem;
+    margin-top: 5rem;
+    color: #972789e8;
+}
+
+main section p {
+    font-size:1.7rem;
+    overflow: auto;
+}
+
+main section .logo-StreamVerse {
+    width: 5em;
+}
+
+main section button:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgb(88, 51, 51);
+    background-color: red;
+    padding: 8px 12px;
+    transition: all .6s;
+}
+
+main section button {
+    font-size: 1.4rem;
+    border: none;
+    color: #fff;
+    background-color: #dc24cdb1;
+    border-radius: 2px;
+    border-bottom: 2px solid rgba(109, 43, 116, 0.615);
+    padding: 8px 12px;
+    margin-bottom: 4rem;
+    scroll-behavior: smooth;
+}
+
+main section .btn-box {
+    padding-top: 2rem;
+  
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+}
+
+#vazio {
+    margin-top: 2rem;
+    color: #c1ff10e8;
+    font-size: 3.8rem;
+}
+
+
+.about-topic {
+
+    background: url('../IMG/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.about-topic h2 {
+    font-size: 3.4rem;
+    color: #c1ff10e8;
+    padding: 10px;
+}
+
+.about-topic p:hover {
+    transition: all .3s;
+    cursor: text;
+    font-size: 1.55rem;
+}
+
+.about-topic p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding-bottom: 3rem;
+    margin: auto;
+}
+
+
+
+/* Links */
+/* Links */
+
+.links-about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    gap: 10rem;
+    background: #100d28;
+}
+
+.links-about-me p {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: #fff;
+ 
+    text-align: center;
+}
+
+.links-about-me p:hover {
+    cursor: pointer;
+    color: #23c4f5;
+}
+
+.links-about-me img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.links-about-me a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.links-about-me a:hover {
+    text-decoration: underline;
+    color: #23c4f5;
+    height: 25px;
+}
+
+
+@keyframes hover-blink {
+    0%, 100% {
+        background-color: red;
+        padding: 8px 12px;
+    }
+    50% {
+        background-color: #400881; /* Cor de hover */
+    }
+}
+
+.blink {
+    animation: hover-blink 0.5s ease-in-out 3; /* Duração de 0,5s, 3 repetições */
+}
+
+
+@media (max-width: 600px) {
+    body, header, main, .about-topic, .links-about-me {
+        display: none; /* Esconde todo o conteúdo principal */
+    }
+    
+    
+}
